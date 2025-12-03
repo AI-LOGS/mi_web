@@ -1,60 +1,174 @@
-/* ----- ESTILOS GENERALES ----- */
+/* PALETA EXTRAÍDA DE LA IMAGEN */
+:root {
+    --beige: #C6A884;
+    --marron: #3A2C24;
+    --cobre: #D37A3B;
+    --gris: #5A5A5A;
+    --blanco: #FFFFFF;
+}
+
+/* BODY */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5;
-    color: #222;
-    line-height: 1.6;
+    background-color: var(--beige);
+    color: var(--marron);
 }
 
-/* ----- HEADER ----- */
-header {
-    background: linear-gradient(135deg, #2e2e2e, #111);
-    color: white;
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--gris);
+    padding: 20px;
+    color: var(--blanco);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: var(--blanco);
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--blanco);
+}
+
+/* HERO */
+.hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 120px 20px;
+    background: var(--beige);
 }
 
-header h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+.hero h1 {
+    font-size: 42px;
+    color: var(--marron);
+    margin-bottom: 20px;
 }
 
-header p {
+.hero-sub {
     font-size: 18px;
-    opacity: 0.85;
+    color: #3e3e3e;
+    max-width: 600px;
+    margin: 0 auto 30px;
 }
 
-/* ----- SECCIONES ----- */
-section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
+.btn-primary {
+    display: inline-block;
+    background: var(--cobre);
+    padding: 15px 25px;
+    color: var(--blanco);
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.btn-primary:hover {
+    background: #b8652f;
+}
+
+/* SECCIONES */
+.section {
+    width: 80%;
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 40px;
+    background: var(--blanco);
     border-radius: 12px;
+    color: var(--marron);
 }
 
-/* Títulos de sección */
-section h2 {
-    font-size: 28px;
+.section.alt {
+    background: #e7d4b5;
+}
+
+h2 {
+    font-size: 32px;
     margin-bottom: 10px;
-    color: #333;
+    color: var(--marron);
 }
 
-/* Lista de servicios */
-#servicios ul {
-    padding-left: 20px;
+.divider {
+    width: 80px;
+    height: 5px;
+    background: var(--cobre);
+    margin-bottom: 25px;
+    border-radius: 2px;
 }
 
-#servicios li {
-    margin-bottom: 8px;
+/* SECCIÓN OSCURA (POR QUÉ LO HAGO) */
+.motiv {
+    background: var(--marron);
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* ----- FOOTER ----- */
+.motiv-container {
+    background: var(--beige);
+    color: var(--marron);
+    max-width: 850px;
+    padding: 50px 40px;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+.motiv-container h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: var(--marron);
+}
+
+.motiv-container p {
+    color: var(--marron);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.divider.light {
+    background: var(--cobre);
+}
+
+
+/* SERVICIOS */
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    font-size: 18px;
+    margin: 15px 0;
+    color: var(--marron);
+}
+
+/* CONTACTO */
+.contact-text {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+/* FOOTER */
 footer {
+    background: var(--marron);
+    color: var(--beige);
     text-align: center;
     padding: 20px;
-    background-color: #222;
-    color: white;
-    margin-top: 40px;
+    margin-top: 50px;
+    border-top: 3px solid var(--cobre);
 }
