@@ -1,109 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dream Logística – Alejandro Balarezo</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamstock – Transformando el caos en control</title>
+
+    <!-- Tipografía Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Iconos (para hamburguesa) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- HEADER BAR SUPERIOR -->
+    <div class="top-bar">
+        Optimización logística para negocios familiares · Lima, Perú
+    </div>
+
     <!-- NAVBAR -->
     <header class="navbar">
-        <div class="logo">Dream Logística</div>
-        <nav>
+        <div class="logo">DREAMSTOCK</div>
+
+        <nav class="nav-links">
             <a href="#inicio">Inicio</a>
-            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#mision-espiritual">Misión</a>
             <a href="#servicios">Servicios</a>
-            <a href="#porque">Por qué lo hago</a>
+            <a href="#futuro">Futuro</a>
+            <a href="#filosofia">Filosofía</a>
+            <a href="#fundador">Fundador</a>
+            <a href="#documentos">Documentos</a>
             <a href="#contacto">Contacto</a>
         </nav>
+
+        <!-- ICONO HAMBURGUESA -->
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
 
-    <!-- HERO / INICIO -->
-    <section id="inicio" class="hero">
-        <h1>Ordeno tu inventario.<br>Diagnostico tu logística.<br>Y te ayudo a mejorar desde adentro.</h1>
-        <p class="hero-sub">
-            Si manejas un negocio familiar y quieres dejar atrás el desorden, estás en el lugar correcto.
-        </p>
-        <a href="https://wa.me/51000000" class="btn-primary">📞 Hablemos por WhatsApp</a>
+    <!-- MENU MÓVIL -->
+    <div class="mobile-menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#mision-espiritual">Misión</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#futuro">Futuro</a>
+        <a href="#filosofia">Filosofía</a>
+        <a href="#fundador">Fundador</a>
+        <a href="#documentos">Documentos</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero fade-in">
+        <h1>DREAMSTOCK</h1>
+        <p class="hero-sub">Transformando el caos en control.</p>
+
+        <a href="#servicios" class="btn-hero">Comenzar diagnóstico</a>
     </section>
 
-    <!-- SOBRE MÍ -->
-    <section id="sobre-mi" class="section">
-        <h2>Sobre mí</h2>
+    <!-- MISIÓN ESPIRITUAL -->
+    <section id="mision-espiritual" class="section fade-in">
+        <h2>Misión Espiritual</h2>
         <div class="divider"></div>
         <p>
-            Soy Alejandro, y quiero ayudarte como ayudé a mi familia.<br><br>
-            Tengo 18 años y estudio en la Universidad de Lima.  
-            Empecé ayudando en el negocio de mi familia sin saber nada de logística.  
-            Lo único que tenía era ganas de aportar.
-            <br><br>
-            Con el tiempo entendí que podía hacer mucho más que mover cajas o contar prendas.  
-            Podía pensar, ordenar, resolver.
-            <br><br>
-            Hoy diseño inventarios, optimizo procesos, creo herramientas simples que funcionan  
-            y acompaño a otras familias que también quieren mejorar.
-            <br><br>
-            No soy perfecto. Pero tengo claridad, empatía y el compromiso de trabajar contigo  
-            como si tu empresa fuera la mía.
+            Que ningún pequeño negocio vuelva a ahogarse por el caos en su almacén.
+            Dreamstock existe para liberar a los emprendedores del desorden logístico
+            que frena su crecimiento.
+        </p>
+    </section>
+
+    <!-- MISIÓN EMPRESARIAL -->
+    <section id="mision-empresarial" class="section alt fade-in">
+        <h2>Misión Empresarial</h2>
+        <div class="divider"></div>
+        <p>
+            Diseñar e implementar sistemas logísticos accesibles, prácticos y replicables para negocios pequeños,
+            adaptados a su espacio y volumen real.
         </p>
     </section>
 
     <!-- SERVICIOS -->
-    <section id="servicios" class="section alt">
-        <h2>Qué puedo hacer por ti</h2>
+    <section id="servicios" class="section fade-in">
+        <h2>Servicios y Fases</h2>
         <div class="divider"></div>
+
         <ul class="service-list">
-            <li><span>🔍</span> Diagnóstico del almacén: revisamos espacios, inventarios y procesos.</li>
-            <li><span>📦</span> Organización del inventario físico: clasificación, unidades logísticas y orden.</li>
-            <li><span>📊</span> Tablas de control de entradas y salidas: sistemas simples y funcionales.</li>
-            <li><span>🗣️</span> Acompañamiento personal: reuniones, dudas, soporte.</li>
-            <li><span>🛠️</span> Solución de problemas específicos: zonas sin uso, mezclas, falta de códigos.</li>
+            <li><strong>1. Diagnóstico personalizado:</strong> Identificación del desorden, errores y pérdidas.</li>
+            <li><strong>2. Organización física:</strong> Reubicación por rotación, volumen y categoría.</li>
+            <li><strong>3. Sistema de control digital:</strong> Bases de datos claras, TumiSoft o plataforma propia.</li>
+            <li><strong>4. Capacitación del personal:</strong> Manuales, videos y procesos replicables.</li>
+            <li><strong>5. Acompañamiento continuo:</strong> Ajustes, revisiones y soporte directo.</li>
         </ul>
     </section>
 
-  <section id="porque" class="motiv">
-    <div class="motiv-container">
-        <h2>Por qué lo hago</h2>
-        <div class="divider light"></div>
-        <p>
-            No solo es logística.<br>
-            Es tu negocio, tu tiempo y tu tranquilidad.
-            <br><br>
-            Sé lo que es un negocio familiar.  
-            Sé lo que pasa cuando las cosas no están claras:  
-            estrés, discusiones, pérdidas, confusión.
-            <br><br>
-            Por eso hago esto.  
-            Porque quiero que tú también sientas lo que yo sentí cuando todo empezó a fluir:  
-            orden, calma, control y espacio para crecer.
-        </p>
-    </div>
-</section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="section">
-        <h2>Trabajemos juntos</h2>
+    <!-- FUTURO -->
+    <section id="futuro" class="section alt fade-in">
+        <h2>Futuro cercano</h2>
         <div class="divider"></div>
-        <p class="contact-text">
-            Escríbeme y armemos un plan para tu negocio.
-        </p>
 
-        <div class="contact-info">
-            <p>📞 WhatsApp: +51 00000000</p>
-            <p>✉️ Correo: Dreamlogisticaes@gmail.com</p>
-            <p>📍 Lima – Consultas presenciales o virtuales</p>
-            <p>📸 Redes: Pronto disponibles</p>
-        </div>
-
-        <a href="https://wa.me/51000000" class="btn-primary">Hablar por WhatsApp</a>
+        <ul class="future-list">
+            <li>Software propio, ligero e intuitivo para microempresarios.</li>
+            <li>Sucursales físicas para asesoría y optimización logística.</li>
+            <li>Integración con e-commerce y automatización del backoffice.</li>
+            <li>Expansión del modelo a provincias.</li>
+        </ul>
     </section>
 
+    <!-- FILOSOFÍA -->
+    <section id="filosofia" class="section fade-in">
+        <h2>Filosofía Dreamstock</h2>
+        <div class="divider"></div>
+
+        <ul class="ph-list">
+            <li><strong>Orden es poder:</strong> El inventario es la base del crecimiento.</li>
+            <li><strong>Pequeño no significa improvisado:</strong> Profesionalismo desde el inicio.</li>
+            <li><strong>Autonomía real:</strong> Sistemas que no dependen de consultores.</li>
+            <li><strong>Acción sobre perfección:</strong> Empezar es mejor que esperar.</li>
+        </ul>
+    </section>
+
+    <!-- FUNDADOR -->
+    <section id="fundador" class="section alt fade-in">
+        <h2>Sobre el fundador</h2>
+        <div class="divider"></div>
+
+        <p>
+            Soy <strong>Alejandro Balarezo</strong>, fundador de Dreamstock.
+            Nací dentro de un negocio familiar y vi el impacto del desorden.
+            Mi objetivo es que ningún emprendedor enfrente el caos solo.
+        </p>
+    </section>
+
+    <!-- DOCUMENTOS -->
+    <section id="documentos" class="section fade-in">
+        <h2>Documentos y Recursos</h2>
+        <div class="divider"></div>
+
+        <div class="doc-grid">
+
+            <div class="doc-card hover-up">
+                <h3>Propuesta Comercial</h3>
+                <p>Presentación oficial de Dreamstock.</p>
+                <a class="btn-doc" href="Propuesta-Dreamstock.pdf">Descargar</a>
+            </div>
+
+            <div class="doc-card hover-up">
+                <h3>Checklist de Inventario</h3>
+                <p>Guía rápida para revisar un almacén.</p>
+                <a class="btn-doc" href="Checklist-Dreamstock.pdf">Descargar</a>
+            </div>
+
+            <div class="doc-card hover-up">
+                <h3>Servicios y Fases</h3>
+                <p>Detalle técnico del proceso Dreamstock.</p>
+                <a class="btn-doc" href="Servicios-Fases.pdf">Descargar</a>
+            </div>
+
+            <div class="doc-card hover-up">
+                <h3>Metodología Dreamstock</h3>
+                <p>Principios estratégicos del sistema.</p>
+                <a class="btn-doc" href="Metodologia-Dreamstock.pdf">Descargar</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section alt fade-in">
+        <h2>Contacto</h2>
+        <div class="divider"></div>
+
+        <p><strong>WhatsApp empresarial:</strong> Próximamente disponible</p>
+        <p><strong>Correo:</strong> dreamstock@gmail.com</p>
+
+        <p class="contact-note">Contáctanos temporalmente por nuestras redes sociales:</p>
+
+        <ul class="social-list">
+            <li>Instagram: @dreamstock</li>
+            <li>TikTok: @dreamstock</li>
+            <li>YouTube: Dreamstock</li>
+        </ul>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        © 2025 Dream Logística – Todos los derechos reservados
+        © 2025 Dreamstock · Todos los derechos reservados · Lima, Perú
     </footer>
+
+    <!-- SCRIPT MENU -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const mobileMenu = document.querySelector(".mobile-menu");
+
+        hamburger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("open");
+        });
+    </script>
 
 </body>
 </html>
